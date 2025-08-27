@@ -1,0 +1,80 @@
+/* .container-grid {   
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bg-wheat {
+    background-color: wheat;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;    
+}
+
+
+.container-grid-2 {
+    display: grid;
+    grid-template-areas: ;
+}
+
+.utama {
+    grid-area: utama;
+    background-color: aqua;
+}
+
+.kedua {
+    grid-area: kedua;
+    background-color: blue;
+}
+
+.ketiga {
+    grid-area: ketiga;
+    background-color: aquamarine;
+}
+
+.keempat {
+    grid-area: keempat;
+    background-color: antiquewhite;
+} */
+
+
+
+
+
+
+
+.wrap-3 {
+    display: grid;
+    margin-top: 30px;
+    grid-template-areas: 
+    "aku kamu"
+    "aku kamu"
+    "kita kamu"
+    ;
+    grid-template-rows: auto auto auto;
+    gtc: 1fr 1fr;
+}
+
+.shell {
+    background-color: bisque;
+    grid-area: kamu;
+}
+
+.hero {
+    background-color: burlywood;
+    grid-area: aku;
+}
+
+.footer {
+    background-color: wheat;
+    grid-area: kita;
+    
+}
