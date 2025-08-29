@@ -81,9 +81,62 @@ body {
 
 .gallery-container-2 {
     padding: 40px;
-    display: grid;
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: repeat(1fr );
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.gallery-container-3 {
+    padding: 40px;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+
+.gallery-item-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "kiri atas tengah"
+        "kiri atas1 tengah1"
+        "kiri bawah tengah1";
+    gap: 20px;
+}
+
+.gallery-item-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item-2 img:hover {
+    transform: scale(1.05); 
+}
+
+
+.gallery-pro {
+    grid-area: kiri;
+}
+
+.gallery-pre {
+    grid-area: atas;
+}
+
+.gallery-pra {
+    grid-area: tengah;
+}
+
+.gallery-pri {
+    grid-area: atas1;
+}
+
+.gallery-pru {
+    grid-area: tengah1;
+}
+
+.gallery-pron {
+    grid-area: bawah;
 }
